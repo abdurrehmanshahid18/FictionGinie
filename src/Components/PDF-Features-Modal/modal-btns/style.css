@@ -1,0 +1,71 @@
+.meaning-language-btn-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+  align-items: flex-end;
+  margin-top: 50px;
+  padding: 0px 10px 0px 10px;
+  width: 100%;
+  z-index: 2;
+}
+
+.meaning-btn {
+  background-color: #ffc107;
+  color: #554328;
+  border-radius: 7px;
+  width: 120px;
+  height: 40px;
+  font-weight: bolder;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+.meaning-btn.font-weight-bold {
+  color: white !important;
+}
+
+.language-btn.font-weight-bold {
+  color: white !important;
+}
+
+.language-btn {
+  background-color: #ffc107;
+  color: #554328;
+  border-radius: 7px;
+  width: 120px;
+  height: 40px;
+  font-weight: bolder;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+.all-languages-btn {
+  background-color: #686953;
+  color: #ffe4c7;
+  border-radius: 7px;
+  width: 120px;
+  height: 40px;
+  font-weight: bolder;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  margin-bottom: 10px;
+}
+
+.languages-btn-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}

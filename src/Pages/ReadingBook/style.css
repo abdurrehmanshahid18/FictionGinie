@@ -1,0 +1,189 @@
+.book-wrapper {
+  overflow-y: clip;
+  height: 100vh;
+  width: 100%;
+  border-image-slice: 1;
+}
+
+.pdf-page-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.book-detail-wrap-sub {
+  width: 100%;
+  overflow: scroll;
+  overflow-x: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.book-detail-wrap-sub::-webkit-scrollbar {
+  display: none;
+}
+
+.pdf-page-btn-container {
+  overflow-y: scroll;
+}
+
+.pdf-page-btn-container::-webkit-scrollbar {
+  display: none;
+}
+
+.pdf-genie {
+  z-index: 4;
+  cursor: pointer;
+  position: absolute;
+  bottom: 60px;
+  right: 10px;
+}
+
+.pdf-genie-img {
+  width: 150px;
+  height: 150px;
+}
+
+.pdf-animated-image {
+  animation: pdfGenieMoveUpDown 5s infinite;
+}
+
+.pdf-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.pdf-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.textLayer {
+  position: absolute;
+  text-align: initial;
+  inset: 0;
+  overflow: hidden;
+  opacity: 0.25;
+  line-height: 1;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  text-size-adjust: none;
+  forced-color-adjust: none;
+  transform-origin: 0 0;
+  z-index: 2;
+}
+
+.textLayer :is(span, br) {
+  color: transparent;
+  position: absolute;
+  white-space: pre;
+  cursor: text;
+  transform-origin: 0% 0%;
+}
+
+.textLayer span.markedContent {
+  top: 0;
+  height: 0;
+}
+
+.textLayer .highlight {
+  --highlight-bg-color: rgb(180, 0, 170);
+  --highlight-selected-bg-color: rgb(0, 100, 0);
+  margin: -1px;
+  padding: 1px;
+  background-color: var(--highlight-bg-color);
+  border-radius: 4px;
+}
+
+@media screen and (forced-colors: active) {
+  .textLayer .highlight {
+    --highlight-bg-color: Highlight;
+    --highlight-selected-bg-color: ButtonText;
+  }
+}
+
+.textLayer .highlight.appended {
+  position: initial;
+}
+
+.textLayer .highlight.begin {
+  border-radius: 4px 0 0 4px;
+}
+
+.textLayer .highlight.end {
+  border-radius: 0 4px 4px 0;
+}
+
+.textLayer .highlight.middle {
+  border-radius: 0;
+}
+
+.textLayer .highlight.selected {
+  background-color: var(--highlight-selected-bg-color);
+}
+
+.textLayer ::-moz-selection {
+  background: rgb(20, 55, 109);
+  background: AccentColor;
+}
+
+.textLayer ::selection {
+  background: rgb(43, 93, 168);
+  background: AccentColor;
+}
+
+.textLayer br::-moz-selection {
+  background: transparent;
+}
+
+.textLayer br::selection {
+  background: transparent;
+}
+
+.textLayer .endOfContent {
+  display: block;
+  position: absolute;
+  inset: 100% 0 0;
+  z-index: -1;
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.textLayer .endOfContent.active {
+  top: 0;
+}
+
+@keyframes pdfGenieMoveUpDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+@media (max-width: 600px) {
+  .btn {
+    padding: 0px !important;
+    padding: 5px !important;
+    font-size: 10px;
+  }
+  .content-wrrapers {
+    height: 100%;
+  }
+}

@@ -1,0 +1,679 @@
+.new-dashboard-wrapper {
+  overflow-y: clip;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  border-left: 30px solid #581690;
+  border-right: 30px solid #581690;
+  border-bottom: 30px solid transparent;
+  border-image: linear-gradient(to top, #3d117d 48%, #581690 48%);
+  border-image-slice: 1;
+}
+
+.content-wrrapers {
+  width: 100%;
+  height: calc(100% - 100px);
+  position: relative;
+}
+
+.sub-content-wrrapers {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 20px solid #976bbd;
+}
+
+.sub-content-wrrapers .text-img-container {
+  display: flex;
+  box-sizing: border-box;
+  margin: auto;
+  /* width: 90%; */
+}
+
+.happy-hd-container .happy-reading-hd {
+  font-size: 50px;
+  color: #000;
+  margin: 0px;
+}
+
+.happy-hd-container .user-name {
+  margin: 0px;
+  font-size: 50px;
+  color: #000;
+  text-transform: capitalize;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.read-now-btn-container .read-now-btn {
+  background-color: #fdc21f;
+  width: 200px;
+  height: 50px;
+  border: none;
+  color: white;
+  font-weight: bolder;
+  border-radius: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.read-now-btn-container .read-now-btn:hover {
+  background-color: green;
+}
+
+.happy-text-container .happy-text {
+  width: 95%;
+  margin: 10px 0px 25px 0px;
+  font-size: 16px;
+}
+
+.dashboard-img-book-cover {
+  margin-top: 30px;
+  position: relative;
+  width: 100%;
+  height: 300px;
+  margin-bottom: 10px;
+  box-shadow: -3px 4px 15px rgba(0, 0, 0, 0.849);
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  overflow: hidden;
+}
+
+.highlighted-card-container {
+  max-width: 310px;
+  min-width: 310px;
+  height: 360px;
+  position: absolute;
+  border-radius: 5px;
+  background-color: #000;
+  display: none;
+  z-index: -1;
+}
+
+.card-container:hover + .highlighted-card-container,
+.highlighted-card-container:hover {
+  display: block !important;
+  left: 0;
+  top: 100%;
+  z-index: +1;
+  transform: scale(1.1);
+}
+.hover-leave {
+  transform: scale(0);
+  transition: all 0.1s ease-in-out;
+}
+
+.highlighted-book-cover {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  overflow: hidden;
+}
+
+.highlighted-book-content {
+  background-color: #333333e0 !important;
+  height: 110px;
+  width: 100%;
+  padding: 10px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.highlighted-dashboard-img-hd {
+  font-weight: 600;
+  color: white;
+  font-size: 14px;
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+
+.highlighted-icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.highlighted-icons-flex-1 {
+  display: flex;
+  gap: 10px;
+}
+
+.highlighted-icon {
+  border: 2px white solid;
+  border-radius: 100%;
+  padding: 5px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(1.05);
+}
+
+.highlighted-book-cover .card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img-container .dashboard-img {
+  max-width: 100%;
+  min-width: 250px;
+  height: 300px;
+  margin-bottom: 5px;
+  box-shadow: -3px 4px 15px rgba(0, 0, 0, 0.849);
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.text-img-container .img-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.img-container .dashboard-img-hd {
+  font-weight: 900;
+  color: #000;
+  font-size: 16px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+.reading-hd-container .continue-reading-hd {
+  color: #000;
+  font-weight: 900;
+  font-size: 22px;
+  letter-spacing: 0px;
+}
+
+.cards-text-container {
+  width: 95%;
+  padding: 30px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.cards-text-container::-webkit-scrollbar {
+  width: 18px;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.cards-text-container::-webkit-scrollbar-track {
+  width: 18px;
+  border-radius: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.cards-text-container::-webkit-scrollbar-thumb {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.cards-text-container::-webkit-scrollbar-thumb {
+  background-color: #fdc21f;
+  border: 1px solid #fdc21f;
+  border-radius: 20px;
+  width: 5px;
+}
+
+.book-cover {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  margin-bottom: 10px;
+  box-shadow: -3px 4px 15px rgba(0, 0, 0, 0.849);
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  overflow: hidden;
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-container .dashboard-img-hd {
+  font-weight: 700;
+  color: #000;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.all-cards {
+  display: flex;
+  gap: 30px;
+  overflow: hidden;
+  padding: 20px;
+  padding-left: 18px;
+  width: 100%;
+  transition: transform 0.3s ease-out;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.all-cards::-webkit-scrollbar {
+  display: none;
+}
+
+.fade-in {
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+.scroll-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.arrow {
+  position: absolute;
+  width: 70px;
+  height: 68.5%;
+  transform: translateY(-50%);
+  font-size: 2em;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  bottom: -61px;
+  z-index: +2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+.arrow:hover {
+  background-color: rgba(0, 0, 0, 0.664);
+}
+
+.left-arrow {
+  left: -7px;
+}
+
+.right-arrow {
+  right: 0px;
+}
+
+.card-container {
+  max-width: 230px;
+  min-width: 230px;
+  position: relative;
+}
+
+.card-container .img-logo-container {
+  position: absolute;
+  left: -2px;
+  z-index: 1;
+}
+
+.card-container .img-logo {
+  margin: 0;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  background: red;
+  text-align: center;
+  border-radius: 10px;
+  padding: 2px 20px 2px 20px;
+}
+
+.card-main-wraps {
+  position: relative;
+}
+
+.card-container:hover {
+  opacity: 1;
+  transition: transform scale(1.05) opacity 1s;
+  cursor: pointer;
+}
+
+.card-main-wraps::-webkit-scrollbar-track {
+  background-color: #d2d2d4;
+}
+
+.card-main-wraps::-webkit-scrollbar-track {
+  background-color: #d2d2d4;
+  border-radius: 20px;
+  border: 1px solid #d2d2d4;
+}
+
+.happy-text-container-responsive {
+  display: none;
+}
+
+.happy-text-responsive {
+  display: none;
+}
+
+.read-now-btn-responsive {
+  display: none;
+}
+
+.dashbaord-donut-container {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  position: absolute;
+  right: -29px;
+  z-index: 1;
+}
+
+.dashbaord-donut {
+  width: 49px;
+  height: 155px;
+  overflow: hidden;
+}
+
+.dashbaord-donut-bottom {
+  width: 195px;
+  position: absolute;
+  height: 79px;
+  bottom: -30px;
+  left: -30px;
+}
+
+.language-modal {
+  background-color: black !important;
+}
+
+.modal-content {
+  background-color: #030303 !important;
+  color: white;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  box-shadow: 0px 26px 30px #030303;
+}
+
+.lang-modal-header {
+  margin: 0px !important;
+  padding: 10px !important;
+}
+
+.lang-modal-body {
+  border-bottom: none !important;
+}
+
+.all-btns-wrap {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center;
+}
+
+.all-btns {
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  background-color: #ffc107 !important;
+  color: #554328 !important;
+  gap: 10px !important;
+  margin-right: 10px !important;
+  border: none !important;
+  border-radius: 15px !important;
+  width: 175px !important;
+  height: 40px !important;
+  font-weight: bolder !important;
+  font-size: 20px !important;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.all-btns:hover {
+  background-color: white !important;
+  color: #554328 !important;
+  cursor: pointer;
+}
+
+.card-btn-icon-wrap {
+  background-color: #febf0a;
+  width: 120px;
+  height: 35px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.card-btn-icon-wrap:hover {
+  background-color: #fec10ae7;
+}
+
+.card-read-now-btn {
+  margin: 0px;
+  font-size: 15px;
+}
+
+.no-data-hd {
+  display: flex;
+  justify-content: center;
+  color: black;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+@media (max-width: 1165px) {
+  .arrow {
+    display: none;
+  }
+
+  .all-cards {
+    overflow-x: scroll;
+  }
+}
+
+@media (max-width: 825px) {
+  .img-container .dashboard-img-book-cover-responsive {
+    height: 300px;
+  }
+
+  .img-container .main-dashboard-img-responsive {
+    height: 300px;
+  }
+
+  .happy-hd-container .happy-reading-hd {
+    font-size: 35px;
+  }
+
+  .happy-hd-container .happy-text {
+    font-size: 12px;
+  }
+
+  .happy-hd-container .user-name {
+    font-size: 35px;
+  }
+
+  .read-now-btn-container .read-now-btn {
+    background-color: #fdc21f;
+    width: 150px;
+    height: 50px;
+    border: none;
+    color: white;
+    font-weight: bolder;
+    border-radius: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .img-container .dashboard-img-hd {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 710px) {
+  .img-container .dashboard-img-book-cover-responsive {
+    height: 280px;
+  }
+
+  .img-container .main-dashboard-img-responsive {
+    height: 280px;
+  }
+
+  .happy-hd-container .happy-reading-hd {
+    font-size: 28px;
+  }
+
+  .happy-hd-container .happy-text {
+    font-size: 10px;
+  }
+
+  .happy-hd-container .user-name {
+    font-size: 28px;
+  }
+
+  .read-now-btn-container .read-now-btn {
+    background-color: #fdc21f;
+    width: 150px;
+    height: 50px;
+    border: none;
+    color: white;
+    font-weight: bolder;
+    border-radius: 15px;
+    margin-top: 15px;
+    margin-bottom: 35px;
+  }
+
+  .img-container .dashboard-img-hd {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 650px) {
+  .img-container .dashboard-img-book-cover-responsive {
+    height: 500px;
+  }
+
+  .img-container .main-dashboard-img-responsive {
+    height: 500px;
+  }
+
+  .happy-text {
+    display: none;
+  }
+
+  .read-now-btn {
+    display: none;
+  }
+
+  .text-img-container {
+    flex-direction: column;
+  }
+
+  .dashboard-img-book-cover-responsive {
+    margin-top: 30px;
+    position: relative;
+    width: 100%;
+    height: 500px;
+    margin-bottom: 10px;
+    box-shadow: -3px 4px 15px rgba(0, 0, 0, 0.849);
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+  }
+
+  .img-container .main-dashboard-img-responsive {
+    max-width: 100%;
+    min-width: 100%;
+    height: 500px;
+    margin-bottom: 5px;
+    box-shadow: -3px 4px 15px rgba(0, 0, 0, 0.849);
+  }
+
+  .img-container {
+    width: 100%;
+  }
+
+  .happy-text-container {
+    display: none;
+  }
+
+  .read-now-btn-responsive {
+    display: block;
+    background-color: #fdc21f;
+    width: 200px;
+    height: 50px;
+    border: none;
+    color: white;
+    font-weight: bolder;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+
+  .happy-text-responsive {
+    display: block;
+    font-size: 18px;
+  }
+
+  .happy-text-container-responsive {
+    display: block;
+  }
+
+  .happy-text-responsive {
+    display: block;
+  }
+
+  .img-container .dashboard-img-hd {
+    margin: 30px 0px 25px 0px;
+    font-size: 22px;
+  }
+
+  .happy-hd-container .happy-reading-hd {
+    font-size: 50px;
+  }
+
+  .happy-hd-container .user-name {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 570px) {
+  .img-container .dashboard-img-book-cover-responsive {
+    height: 400px;
+  }
+
+  .img-container .main-dashboard-img-responsive {
+    height: 400px;
+  }
+
+  .happy-hd-container .happy-reading-hd {
+    font-size: 40px;
+  }
+
+  .happy-hd-container .user-name {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 435px) {
+  .img-container .dashboard-img-book-cover-responsive {
+    height: 250px;
+  }
+
+  .img-container .main-dashboard-img-responsive {
+    height: 250px;
+  }
+
+  .happy-hd-container .happy-reading-hd {
+    font-size: 30px;
+  }
+
+  .happy-hd-container .user-name {
+    font-size: 30px;
+  }
+}

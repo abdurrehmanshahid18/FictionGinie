@@ -1,0 +1,204 @@
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 38px;
+  height: 24px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 5px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: darkgray;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 13px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  top: 3px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #fde71f;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #fde71f;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(17px);
+  -ms-transform: translateX(17px);
+  transform: translateX(17px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.registration-genres-choice {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+ul.registration-genres-choice li i {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  opacity: 0;
+  font-size: 16px;
+}
+
+ul.registration-genres-choice {
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  list-style: none;
+}
+
+ul.registration-genres-choice li {
+  margin: 0px;
+  padding: 0px;
+  float: left;
+  width: calc(16.5% - 10px);
+  padding: 10px;
+  margin: 5px;
+  border: 2px solid rgba(0, 0, 0, 0);
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+}
+
+ul.registration-genres-choice li img {
+  margin-bottom: 8px;
+  width: 60px;
+}
+
+ul.registration-genres-choice li h6 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #666666;
+  margin-bottom: 0px;
+}
+
+.profile-img {
+  max-width: 90px;
+  min-width: 90px;
+}
+
+.profile-img-wrap {
+  width: 150px !important;
+  flex-wrap: wrap !important;
+  padding: 10px !important;
+  margin: 0px !important;
+}
+
+p.small-paragraph-spacing {
+  margin-bottom: 1rem;
+}
+
+.chnge-passowrd-account {
+  color: #3db13d;
+  cursor: pointer;
+}
+
+#account-edit-photo {
+  max-width: 300px;
+  margin: 0 auto 45px auto;
+  padding-right: 15px;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+#account-edit-photo img {
+  border-radius: 5px;
+}
+
+#account-edit-photo div {
+  margin-bottom: 25px;
+}
+
+#account-edit-photo p {
+  margin-bottom: 12px;
+}
+
+.account-settings-form .registration-genres-step {
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+
+.registration-genres-step {
+  margin-top: 40px;
+}
+
+.registration-genres-step h5 {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.btn.btn-form {
+  font-size: 12px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.user-name-icon-wrap-account {
+  background-color: purple;
+  width: fit-content;
+  width: 100%;
+  height: 200px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-name-icon-account {
+  font-size: 100px;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: -10.5px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  main#col-main {
+    margin-left: 0px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  main#col-main {
+    margin-left: 0px;
+  }
+
+  ul.registration-genres-choice li {
+    width: calc(33.3% - 10px);
+  }
+
+  #account-edit-photo {
+    padding: 0px;
+  }
+}

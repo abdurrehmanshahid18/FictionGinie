@@ -1,0 +1,26 @@
+.signup-heading h2 {
+  margin-top: 25px;
+}
+
+.signup-image {
+  margin-bottom: 10px;
+}
+
+.custom-signup-form {
+  gap: 10px !important;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+@media (max-width: 1000px) {
+  .signup-form {
+    margin: 0px 30px 0px 30px !important;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .signup-heading h2 {
+    font-size: 35px !important;
+  }
+}

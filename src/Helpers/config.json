@@ -1,0 +1,7 @@
+{
+    "baseUrl": "https://fg.fictiongenie.com",
+    "baseUrl3": "https://fg.fictiongenie.com",
+    "baseUrl2": "https://api.fictiongenie.com/api/",
+    "baseUrl2Image": "https://api.fictiongenie.com/",
+    "statsUrl": "https://api.fictiongenie.com/api/stats/books/"
+}

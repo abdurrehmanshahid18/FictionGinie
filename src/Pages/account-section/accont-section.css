@@ -1,0 +1,259 @@
+.account-main-container {
+  overflow: hidden;
+  min-height: 100vh;
+  background-image: linear-gradient(180deg, rgb(93, 19, 147), rgb(59, 9, 124));
+  position: relative;
+}
+
+.account-main-container .empty-card {
+  justify-content: center;
+}
+
+.link-opt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.link-opt:hover {
+  color: white;
+  border-bottom: 2px solid #d49744;
+}
+
+.light-donut {
+  position: absolute;
+  width: 130px;
+  height: 210px;
+  top: 20vh;
+  right: -20px;
+}
+
+.dark-donut {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  top: 65vh;
+  right: 90%;
+}
+
+.reading-text-today {
+  color: white;
+  font-size: 50px;
+  font-weight: 900;
+  font-family: system-ui;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.5px;
+}
+
+.second-section {
+  position: relative;
+}
+
+.accounts-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.second-account-container {
+  width: 82%;
+  margin-right: 2px;
+  margin-left: 5px;
+}
+
+.account-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  height: 450px !important;
+}
+
+.account-image {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.account-card:hover {
+  opacity: 1;
+  transition: transform scale(1.05) opacity 1s;
+}
+
+.highlight-account-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 1s ease, opacity 2s ease;
+  padding-top: 35px;
+}
+
+.highlight-account-image-container:hover {
+  transform: scale(1.05);
+}
+
+.highlight-account-image {
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.acoount-text {
+  color: white;
+  font-size: 40px;
+  font-weight: 900;
+  padding-top: 20px;
+  font-family: system-ui;
+  margin: 0px;
+}
+
+body::after {
+  position: absolute;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.hightlighted-card {
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 26px;
+  margin-top: 5px;
+  margin-bottom: 8px;
+  box-shadow: 0 0 11px 4px black;
+  margin-left: 8px;
+  margin-right: 8px;
+  position: relative;
+}
+
+.react-multiple-carousel__arrow--right:hover .hightlighted-card {
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 26px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  box-shadow: 0 0 32px 5px black;
+  margin-left: 5px;
+  margin-right: 5px;
+  position: relative;
+  display: block;
+}
+
+.hightlighted-content {
+  height: 100%;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.hightlight-text-head {
+  color: #420b81;
+  font-weight: 900;
+  font-size: 26px;
+  text-align: center;
+  font-family: system-ui;
+  margin: 0;
+}
+
+.hightlight-text-card {
+  margin: 8px;
+  color: #420b81;
+  font-weight: 800;
+  font-size: 18px;
+  text-align: center;
+  font-family: system-ui;
+  line-height: 1;
+}
+
+.btn-container-highlight {
+  text-align: center;
+}
+
+.hightight-btn {
+  background-color: #470d85;
+  color: #ffc727 !important;
+  font-weight: 900;
+  border: none;
+  text-transform: initial !important;
+  font-weight: 900 !important;
+  border-radius: 35px;
+  font-size: 16px !important;
+  letter-spacing: 1px;
+  font-family: system-ui !important;
+  margin-top: 10px;
+}
+
+.second-btn-container {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.second-btn-container .contact-btn {
+  color: #000;
+  font-size: 1.2rem;
+  font-weight: 700;
+  height: 3.5rem;
+  text-transform: uppercase;
+  width: 16rem;
+}
+.add-another-child {
+  border: none;
+  color: #470d85 !important;
+  font-size: 21px !important;
+  margin-bottom: 50px;
+}
+.add-another-child,
+.hightight-btn {
+  font-family: system-ui !important;
+  font-weight: 900 !important;
+  margin-top: 10px;
+  text-transform: none !important;
+}
+.contact-btn,
+.learn-more-btn {
+  border-radius: 35px;
+  text-transform: uppercase;
+}
+.contact-btn {
+  align-items: center;
+  background-color: #ffc727 !important;
+  color: #1b3e5c;
+  display: flex;
+  font-size: 1rem;
+  font-weight: 700;
+  height: 3.4rem;
+  justify-content: center;
+  width: 12rem;
+}
+
+.add-another-child {
+  border: none;
+  text-transform: initial !important;
+  color: #470d85 !important;
+  font-weight: 900 !important;
+  font-size: 21px !important;
+  font-family: system-ui !important;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 661px) {
+  .reading-text-today {
+    font-size: 30px;
+  }
+}

@@ -1,0 +1,116 @@
+.main-dashboard-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.dashboard-navbar-section {
+  min-height: 10%;
+  background-color: #581690;
+  padding-top: 5px;
+}
+
+.navbar-wrapper-dashboard {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.user-profile-container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.user-profile-container .username {
+  margin: 0px;
+  color: white;
+  font-size: 16px !important;
+  margin-left: 10px;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+}
+
+.user-profile-container-responsive .username {
+  margin: 0px;
+  color: white;
+  font-size: 16px !important;
+  margin-left: 10px;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+}
+
+.user-profile-container-responsive img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  margin-right: 6px;
+}
+
+.user-profile-container-responsive {
+  display: none;
+}
+
+#header-menu-data {
+  font-size: 15px !important;
+  color: white !important;
+}
+
+#header-menu-data:hover {
+  background-color: #333333ef !important;
+  color: #fdc121 !important;
+}
+
+.responsive-navbar {
+  display: none;
+}
+
+.navbar-color {
+  background-color: #581690 !important;
+}
+
+.color {
+  border-color: white !important;
+  padding-bottom: 6px;
+  color: white !important;
+}
+
+.profile-menu-header {
+  background-color: #333333e0 !important;
+}
+
+@media (max-width: 991px) {
+  .user-profile-container {
+    display: none;
+  }
+
+  .responsive-navbar {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    line-height: 40px;
+    border-radius: 10px;
+  }
+
+  .responsive-navbar .responsive-navbar-link {
+    color: white !important;
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+  }
+
+  .responsive-navbar .responsive-navbar-link:hover {
+    color: #fdc121 !important;
+    border-radius: 10px;
+  }
+
+  .user-profile-container-responsive {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .profile-menu-header {
+    display: none;
+  }
+}

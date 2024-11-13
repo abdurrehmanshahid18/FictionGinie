@@ -1,0 +1,114 @@
+.statBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  min-width: 150px;
+  padding: 10px;
+}
+
+.statBlock:hover {
+  cursor: pointer;
+}
+
+.iconStyle {
+  font-size: 20px;
+  height: 25px;
+}
+
+.statName {
+  text-align: center;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: -2px;
+}
+
+.statValue {
+  font-weight: 600;
+  margin: 0px;
+  font-size: 16px;
+  margin-top: 3px;
+}
+
+.subName {
+  height: 18px;
+}
+
+.Stats-heading {
+  font-size: 18px;
+  color: black;
+}
+
+.modal-container {
+  background-color: white !important;
+  color: black;
+}
+
+.modal-hd {
+  text-align: center !important;
+}
+
+.stats-table-container {
+  width: 100%;
+  text-align: center;
+}
+
+.td-style {
+  border: 1px solid black !important;
+  padding: 5px;
+}
+
+.profile-book-img-container {
+  margin-right: 10px;
+}
+
+.profile-book-img {
+  box-shadow: -1px 3px 7px rgba(0, 0, 0, 0.849) !important;
+  margin: 10px !important;
+}
+
+.profile-book-img {
+  width: 75px !important;
+  height: 85px !important;
+  text-align: center;
+}
+
+.profile-books-read-responsive {
+  display: none;
+}
+
+.book-listing .bookImage {
+  width: 75px;
+  height: 85px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.book-listing .content-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.book-listing .heading {
+  font-size: 18px;
+  color: black;
+}
+
+.book-listing .title {
+  font-size: 16px;
+}
+
+.book-listing .subtitle {
+  font-size: 10px;
+  color: gray;
+}
+
+@media (max-width: 360px) {
+  .profile-books-read-responsive {
+    display: flex;
+  }
+  .profile-books-read-wrap {
+    display: none;
+  }
+}

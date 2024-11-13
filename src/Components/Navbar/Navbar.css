@@ -1,0 +1,20 @@
+.navbar-section {
+  min-height: 10vh;
+  background-color: #581690;
+}
+
+.navbar-wrapper {
+  padding: 0px 50px 0px 50px;
+}
+
+@media (max-width: 460px) {
+  .navbar-wrapper {
+    padding: 20px 30px 10px 30px;
+  }
+}
+
+@media (max-width: 404px) {
+  .navbar-toggler {
+    margin-left: 30px;
+  }
+}

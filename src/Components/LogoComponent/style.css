@@ -1,0 +1,35 @@
+@font-face {
+  font-family: dimbo;
+  src: url(../../font/Dimbo\ Regular.ttf);
+}
+
+.header-logo {
+  width: 80px;
+  margin-right: 10px;
+}
+
+.logo-hd-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.nav-bar-logo {
+  width: 180px;
+}
+
+.ai-powered-hd {
+  line-height: 1px;
+  color: white;
+  font-family: dimbo;
+  margin: 0px;
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+
+.logo-text {
+  font-family: dimbo;
+  letter-spacing: 5px;
+  color: white;
+  font-size: 22px;
+  margin: 0px;
+}
